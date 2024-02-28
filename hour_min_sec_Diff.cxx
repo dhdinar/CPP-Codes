@@ -18,7 +18,7 @@ public:
     {
         
 
-        if (a.sec > b.sec)
+        if (a.sec >= b.sec)
             a.sec = a.sec - b.sec;
         else
         {
@@ -26,7 +26,7 @@ public:
             b.min++;
         }
 
-        if (a.min > b.min)
+        if (a.min >= b.min)
             a.min = a.min - b.min;
         else
         {
@@ -34,7 +34,7 @@ public:
             b.hour++;
         }
 
-        if (a.hour > b.hour)
+        if (a.hour >= b.hour)
             a.hour = a.hour - b.hour;
 
         else
